@@ -1,0 +1,72 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --text: #605C5D;
+  --text-light: #807B76;
+  --primary: #D82255;
+  --primary-1: #D822551A;
+
+  --menu-bg: #000000e6;
+  --dropdown-bg: #D822550D;
+  --separator: #DBDBDB;
+
+  --size-xs: .5rem;
+  --size-xsm: .75rem;
+  --size-sm: 1rem;
+  --size-smd: 1.5rem;
+  --size-md: 2rem;
+  --size-lg: 3rem;
+  --size-xl: 4rem;
+  --size-xxl: 6rem;
+  --size-xxxl: 7rem;
+
+  --font: 'Poppins', sans-serif;
+  --fw-normal: 400;
+  --fw-bold: 500;
+  --fw-bolder: 600;
+}
+
+html,
+body {
+  font-family: var(--font);
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid var(--primary);
+  border-radius: calc(var(--size-xs) - 2px);
+  padding: var(--size-xs) var(--size-sm);
+  font-size: var(--size-sm);
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.icone {
+  width: var(--size-sm);
+}

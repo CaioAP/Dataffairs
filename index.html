@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dataffairs | Home</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+  <style>
+    .hero {
+      background-image: 
+        linear-gradient(0deg, #FFFFFFAA, #FFFFFFAA), 
+        url("assets/Hero.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: var(--size-sm);
+    }
+
+    .hero .container {
+      padding: var(--size-xxxl) var(--size-sm) var(--size-xl);
+    }
+
+    .hero-crumbs {
+      font-size: calc(var(--size-sm) - 4px);
+      font-weight: var(--fw-normal);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: var(--size-xs);
+      margin-bottom: var(--size-sm);
+    }
+
+    .hero-crumbs .dot {
+      font-size: var(--size-smd);
+      line-height: 1;
+      height: var(--size-sm);
+      display: flex;
+      align-items: center;
+    }
+
+    .titulo {
+      color: var(--primary);
+      font-size: var(--size-smd);
+      font-weight: var(--fw-bolder);
+      line-height: 1.2;
+      margin-bottom: var(--size-md);
+    }
+
+    .apresentacao .titulo {
+      border-left: 5px solid var(--primary);
+      padding: 0 0 0 var(--size-sm);
+    }
+
+    .descricao {
+      color: var(--text);
+      font-size: var(--size-sm);
+      font-weight: var(--fw-normal);
+    }
+
+    .servicos-links {
+      font-size: calc(var(--size-sm) - 2px);
+    }
+
+    .servico-link {
+      padding: calc(var(--size-sm) + 4px) 0;
+      border-bottom: .7px solid var(--separator);
+    }
+
+    .servico-link > a {
+      color: var(--text);
+      font-weight: var(--fw-bold);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media only screen and (min-width: 1000px) {
+      .container {
+        padding: 0 var(--size-lg);
+        width: calc(90vw - var(--size-lg) * 2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav-bar></nav-bar>
+
+  <section class="hero">
+    <div class="container">
+      <h3 class="hero-crumbs">
+        TECH <span class="dot">&bull;</span> 
+        COMUNICAÇÃO <span class="dot">&bull;</span> 
+        SUSTENTABILIDADE
+      </h3>
+      <h1 class="titulo">
+        Sua empresa é o vetor de mudança que o mundo precisa
+      </h1>
+      <button class="btn hero-action">
+        Entre em contato
+      </button>
+    </div>
+  </section>
+
+  <section class="apresentacao container">
+    <h2 class="titulo">
+      Por um futuro mais próspero para as pessoas, para o planeta e 
+      para os negócios
+    </h2>
+    <p class="descricao">
+      Somos uma empresa de inteligência que oferece soluções customizadas - 
+      do planejamento à execução -  na interface entre sustentabilidade, 
+      tecnologia e comunicação, capazes de gerar benefícios para o negócio 
+      e para a sociedade, simultaneamente. Nossas decisões e perfil 
+      consultivo são baseados em evidência e na ciência.
+      <br><br>
+      Este nosso olhar - analítico, estratégico e correlacional -  promove 
+      uma espiral virtuosa capaz de nos transportar a um destino comum: um 
+      futuro mais próspero para as pessoas, para o planeta e para as 
+      empresas.
+    </p>
+  </section>
+
+  <section class="servicos container">
+    <h2 class="titulo">
+      Nossos serviços
+    </h2>
+    <p class="descricao">
+      Trabalhamos em diferentes níveis para realizar uma transição 
+      sustentável. Nossas linhas de negócios estão focadas em ajudar 
+      diferentes partes interessadas a assumir um papel proativo nesta 
+      jornada.
+    </p>
+    <nav class="servicos-links">
+      <ul>
+        <li class="servico-link">
+          <a href="">
+            Data ESG e Relatórios de Sustentabildiade
+            <svg class="icone arrow-right" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.7071 8.7071C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928931C13.9526 0.538407 13.3195 0.538407 12.9289 0.928931C12.5384 1.31946 12.5384 1.95262 12.9289 2.34314L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.7071ZM8.74228e-08 9L20 9L20 7L-8.74228e-08 7L8.74228e-08 9Z" fill="#605C5D"/>
+            </svg>              
+          </a>
+        </li>
+        <li class="servico-link">
+          <a href="">
+            Relações Públicas & Public Affairs
+            <svg class="icone arrow-right" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.7071 8.7071C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928931C13.9526 0.538407 13.3195 0.538407 12.9289 0.928931C12.5384 1.31946 12.5384 1.95262 12.9289 2.34314L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.7071ZM8.74228e-08 9L20 9L20 7L-8.74228e-08 7L8.74228e-08 9Z" fill="#605C5D"/>
+            </svg> 
+          </a>
+        </li>
+        <li class="servico-link">
+          <a href="">
+            Comunicação de ciência
+            <svg class="icone arrow-right" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.7071 8.7071C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928931C13.9526 0.538407 13.3195 0.538407 12.9289 0.928931C12.5384 1.31946 12.5384 1.95262 12.9289 2.34314L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.7071ZM8.74228e-08 9L20 9L20 7L-8.74228e-08 7L8.74228e-08 9Z" fill="#605C5D"/>
+            </svg> 
+          </a>
+        </li>
+        <li class="servico-link">
+          <a href="">
+            Worshops ESG
+            <svg class="icone arrow-right" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.7071 8.7071C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928931C13.9526 0.538407 13.3195 0.538407 12.9289 0.928931C12.5384 1.31946 12.5384 1.95262 12.9289 2.34314L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.7071ZM8.74228e-08 9L20 9L20 7L-8.74228e-08 7L8.74228e-08 9Z" fill="#605C5D"/>
+            </svg> 
+          </a>
+        </li>
+        <li class="servico-link">
+          <a href="">
+            Estratégias baseadas em ciência
+            <svg class="icone arrow-right" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.7071 8.7071C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928931C13.9526 0.538407 13.3195 0.538407 12.9289 0.928931C12.5384 1.31946 12.5384 1.95262 12.9289 2.34314L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.7071ZM8.74228e-08 9L20 9L20 7L-8.74228e-08 7L8.74228e-08 9Z" fill="#605C5D"/>
+            </svg> 
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="projetos container">
+    <h2 class="titulo">
+      Conheça alguns de nosos projetos
+    </h2>
+  </section>
+
+  <article class="comentarios container">
+    <h2 class="titulo">
+      O que as empresas dizem
+    </h2>
+    <div class="carousel">
+      <img src="" alt="" class="empresa-logo">
+    </div>
+    <p class="descricao">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Posuere egestas lobortis tellus a sodales elit sed. Egestas at 
+      vestibulum sed vitae, massa et. Feugiat malesuada et sapien eget. 
+      Consectetur felis nisl, in arcu pellentesque egestas.Lorem ipsum 
+      dolor sit amet, consectetur adipiscing elit. Posuere egestas lobortis.
+    </p>
+  </article>
+
+  <nav-footer></nav-footer>
+  <script src="/components/navbar.js"></script>
+  <script src="/components/footer.js"></script>
+</body>
+</html>
