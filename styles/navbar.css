@@ -135,7 +135,7 @@ html {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 var(--size-lg);
-    width: 90vw;
+    max-width: 80vw;
   }
 
   .nav-header {

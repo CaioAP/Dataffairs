@@ -15,10 +15,14 @@
   --size-sm: 1rem;
   --size-smd: 1.5rem;
   --size-md: 2rem;
+  --size-xmd: 2.5rem;
   --size-lg: 3rem;
   --size-xl: 4rem;
   --size-xxl: 6rem;
   --size-xxxl: 7rem;
+
+  --hero-pd-top: 8rem;
+  --hero-pd-bot: 8rem;
 
   --font: 'Poppins', sans-serif;
   --fw-normal: 400;
@@ -52,6 +56,26 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--size-sm);
+}
+
+.titulo {
+  color: var(--primary);
+  font-size: var(--size-smd);
+  font-weight: var(--fw-bolder);
+  line-height: 1.2;
+  margin-bottom: var(--size-md);
+}
+
+.descricao {
+  color: var(--text);
+  font-size: var(--size-sm);
+  font-weight: var(--fw-normal);
+}
+
 .btn {
   background: transparent;
   border: 2px solid var(--primary);
@@ -60,6 +84,7 @@ a {
   font-size: var(--size-sm);
   color: var(--primary);
   cursor: pointer;
+  text-transform: none;
 }
 
 .btn:hover {
@@ -67,6 +92,41 @@ a {
   color: var(--white);
 }
 
+.btn-white {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.btn-white:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.btn-fill {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn-fill:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+
 .icone {
   width: var(--size-sm);
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    padding: 0 var(--size-xmd);
+    max-width: 80vw;
+  }
+
+  .titulo {
+    font-size: var(--size-md);
+  }
+
+  .descricao {
+    font-size: var(--size-sm);
+  }
 }

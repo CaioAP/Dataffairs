@@ -4,90 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/Icon.svg" sizes="any" type="image/svg+xml">
   <title>Dataffairs | Home</title>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/carousel.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-
-  <style>
-    .hero {
-      background-image: 
-        linear-gradient(0deg, #FFFFFFAA, #FFFFFFAA), 
-        url("assets/Hero.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .container {
-      width: 100%;
-      margin: 0 auto;
-      padding: var(--size-sm);
-    }
-
-    .hero .container {
-      padding: var(--size-xxxl) var(--size-sm) var(--size-xl);
-    }
-
-    .hero-crumbs {
-      font-size: calc(var(--size-sm) - 4px);
-      font-weight: var(--fw-normal);
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: var(--size-xs);
-      margin-bottom: var(--size-sm);
-    }
-
-    .hero-crumbs .dot {
-      font-size: var(--size-smd);
-      line-height: 1;
-      height: var(--size-sm);
-      display: flex;
-      align-items: center;
-    }
-
-    .titulo {
-      color: var(--primary);
-      font-size: var(--size-smd);
-      font-weight: var(--fw-bolder);
-      line-height: 1.2;
-      margin-bottom: var(--size-md);
-    }
-
-    .apresentacao .titulo {
-      border-left: 5px solid var(--primary);
-      padding: 0 0 0 var(--size-sm);
-    }
-
-    .descricao {
-      color: var(--text);
-      font-size: var(--size-sm);
-      font-weight: var(--fw-normal);
-    }
-
-    .servicos-links {
-      font-size: calc(var(--size-sm) - 2px);
-    }
-
-    .servico-link {
-      padding: calc(var(--size-sm) + 4px) 0;
-      border-bottom: .7px solid var(--separator);
-    }
-
-    .servico-link > a {
-      color: var(--text);
-      font-weight: var(--fw-bold);
-      display: flex;
-      justify-content: space-between;
-    }
-
-    @media only screen and (min-width: 1000px) {
-      .container {
-        padding: 0 var(--size-lg);
-        width: calc(90vw - var(--size-lg) * 2);
-      }
-    }
-  </style>
 </head>
 <body>
   <nav-bar></nav-bar>
@@ -108,23 +30,25 @@
     </div>
   </section>
 
-  <section class="apresentacao container">
-    <h2 class="titulo">
-      Por um futuro mais próspero para as pessoas, para o planeta e 
-      para os negócios
-    </h2>
-    <p class="descricao">
-      Somos uma empresa de inteligência que oferece soluções customizadas - 
-      do planejamento à execução -  na interface entre sustentabilidade, 
-      tecnologia e comunicação, capazes de gerar benefícios para o negócio 
-      e para a sociedade, simultaneamente. Nossas decisões e perfil 
-      consultivo são baseados em evidência e na ciência.
-      <br><br>
-      Este nosso olhar - analítico, estratégico e correlacional -  promove 
-      uma espiral virtuosa capaz de nos transportar a um destino comum: um 
-      futuro mais próspero para as pessoas, para o planeta e para as 
-      empresas.
-    </p>
+  <section class="apresentacao">
+    <div class="container">
+      <h2 class="titulo">
+        Por um futuro mais próspero para as pessoas, para o planeta e 
+        para os negócios
+      </h2>
+      <p class="descricao">
+        Somos uma empresa de inteligência que oferece soluções customizadas - 
+        do planejamento à execução -  na interface entre sustentabilidade, 
+        tecnologia e comunicação, capazes de gerar benefícios para o negócio 
+        e para a sociedade, simultaneamente. Nossas decisões e perfil 
+        consultivo são baseados em evidência e na ciência.
+        <br><br>
+        Este nosso olhar - analítico, estratégico e correlacional -  promove 
+        uma espiral virtuosa capaz de nos transportar a um destino comum: um 
+        futuro mais próspero para as pessoas, para o planeta e para as 
+        empresas.
+      </p>
+    </div>
   </section>
 
   <section class="servicos container">
@@ -183,30 +107,118 @@
     </nav>
   </section>
 
-  <section class="projetos container">
-    <h2 class="titulo">
-      Conheça alguns de nosos projetos
-    </h2>
+  <section class="projetos">
+    <div class="container">
+      <h2 class="titulo">
+        Conheça alguns de nossos projetos
+      </h2>
+      <div class="projetos-links">
+        <a href="" class="projeto-link">
+          <img src="/assets/Projeto_1.jpg" alt="" class="projeto-image">
+        </a>
+        <a href="" class="projeto-link">
+          <img src="/assets/Projeto_2.png" alt="" class="projeto-image">
+        </a>
+        <a href="" class="projeto-link">
+          <img src="/assets/Projeto_3.png" alt="" class="projeto-image">
+        </a>
+        <a href="" class="projeto-link">
+          <img src="/assets/Projeto_4.png" alt="" class="projeto-image">
+        </a>
+      </div>
+    </div>
   </section>
 
-  <article class="comentarios container">
-    <h2 class="titulo">
-      O que as empresas dizem
-    </h2>
-    <div class="carousel">
-      <img src="" alt="" class="empresa-logo">
+  <article class="comentarios">
+    <div class="container">
+      <h2 class="titulo">
+        O que as empresas dizem?
+      </h2>
+      <slide-carousel name="comentarios" height="70">
+        <div slot="carousel-item" class="carousel-item">
+          <img slot="carousel-image" src="/assets/Empresa_1.png" alt="" class="carousel-image">
+          <p slot="carousel-texto" class="carousel-texto descricao">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Posuere egestas lobortis tellus a sodales elit sed. Egestas at vestibulum 
+            sed vitae, massa et. Feugiat malesuada et sapien eget. Consectetur felis 
+            nisl, in arcu pellentesque egestas. Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit. Posuere egestas lobortis.
+          </p>
+        </div>
+        <div slot="carousel-item" class="carousel-item">
+          <img slot="carousel-image"  src="/assets/Empresa_2.png" alt="" class="carousel-image">
+          <p slot="carousel-texto" class="carousel-texto descricao">
+            Egestas at vestibulum sed vitae, massa et. Feugiat malesuada et sapien eget. 
+            Consectetur felis nisl, in arcu pellentesque egestas.
+          </p>
+        </div>
+        <div slot="carousel-item" class="carousel-item">
+          <img slot="carousel-image"  src="/assets/Empresa_3.png" alt="" class="carousel-image">
+          <p slot="carousel-texto" class="carousel-texto descricao">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere egestas lobortis.
+          </p>
+        </div>
+        <div slot="carousel-item" class="carousel-item">
+          <img slot="carousel-image"  src="/assets/Empresa_4.png" alt="" class="carousel-image">
+          <p slot="carousel-texto" class="carousel-texto descricao">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere egestas lobortis.
+          </p>
+        </div>
+      </slide-carousel>
     </div>
-    <p class="descricao">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Posuere egestas lobortis tellus a sodales elit sed. Egestas at 
-      vestibulum sed vitae, massa et. Feugiat malesuada et sapien eget. 
-      Consectetur felis nisl, in arcu pellentesque egestas.Lorem ipsum 
-      dolor sit amet, consectetur adipiscing elit. Posuere egestas lobortis.
-    </p>
   </article>
+
+  <section class="conectar">
+    <div class="container">
+      <h4 class="sub-titulo">
+        Para novos desafios, novas estratégias:
+      </h4>
+      <h2 class="titulo">
+        Vamos fazer do seu negócio um vetor do desenvolvimento sustentável?
+      </h2>
+      <a href="" class="btn btn-white">
+        Conecte-se com a nossa equipe
+      </a>
+    </div>
+  </section>
+
+  <section class="equipe">
+    <div class="container">
+      <slide-carousel name="equipe" height="200">
+        <div slot="carousel-item" class="carousel-item">
+          <img slot="carousel-image"  src="/assets/Equipe_1.jpg" alt="" class="carousel-image">
+        </div>
+        <div slot="carousel-item" class="carousel-item">
+          <img slot="carousel-image"  src="/assets/Equipe_2.jpg" alt="" class="carousel-image">
+        </div>
+        <div slot="carousel-item" class="carousel-item">
+          <img slot="carousel-image"  src="/assets/Equipe_3.jpg" alt="" class="carousel-image">
+        </div>
+        <div slot="carousel-item" class="carousel-item">
+          <img slot="carousel-image"  src="/assets/Equipe_4.jpg" alt="" class="carousel-image">
+        </div>
+      </slide-carousel>
+      <p class="descricao">
+        Cada qual com sua individualidade, mas sempre agindo como um time, a equipe 
+        da Dataffairs tem habilidades técnicas e comportamentais que se complementam. 
+        Somos comunicadores e especialistas em tecnologia com pensamento analítico e 
+        multidisciplinar aliado a perfis consultivos e orientados a resultados. 
+        Por aqui, um projeto concluído é, na verdade, uma potência que causa efeito 
+        transformador para o negócio e para a sociedade. E, um novo projeto, significa 
+        a abertura de caminhos para correlacionarmos ideias, dados, comunicação e 
+        propósito. Conheça mais sobre cada *dataffair* 
+      </p>
+      <div class="equipe-action">
+        <a href="" class="btn">
+          Equipe Dataffairs
+        </a>
+      </div>
+    </div>
+  </section>
 
   <nav-footer></nav-footer>
   <script src="/components/navbar.js"></script>
+  <script src="/components/carousel.js"></script>
   <script src="/components/footer.js"></script>
 </body>
 </html>

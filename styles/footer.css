@@ -71,7 +71,8 @@ footer {
     grid-template-areas: "company links links links";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: var(--size-md);
-    width: calc(90vw - var(--size-lg) * 2);
+    padding: var(--size-xxl) var(--size-lg);
+    max-width: 80vw;
   }
 
   .footer-link {

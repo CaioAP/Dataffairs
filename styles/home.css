@@ -1,0 +1,232 @@
+.hero {
+  background-image: 
+    linear-gradient(0deg, #FFFFFFAA, #FFFFFFAA), 
+    url(../assets/Hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero .container {
+  padding: var(--size-xxxl) var(--size-sm) var(--size-xl);
+}
+
+.hero-crumbs {
+  font-size: calc(var(--size-sm) - 4px);
+  font-weight: var(--fw-normal);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: var(--size-xs);
+  margin-bottom: var(--size-sm);
+}
+
+.hero-crumbs .dot {
+  font-size: var(--size-smd);
+  line-height: 1;
+  height: var(--size-sm);
+  display: flex;
+  align-items: center;
+}
+
+.apresentacao .titulo {
+  border-left: 5px solid var(--primary);
+  padding: 0 0 0 var(--size-sm);
+}
+
+.servicos-links {
+  font-size: calc(var(--size-sm) - 2px);
+}
+
+.servico-link {
+  padding: calc(var(--size-sm) + 4px) 0;
+  border-bottom: .7px solid var(--separator);
+}
+
+.servico-link > a {
+  color: var(--text);
+  font-weight: var(--fw-bold);
+  display: flex;
+  justify-content: space-between;
+}
+
+.projetos-links {
+  display: grid;
+  grid-template-areas: 
+    "first-image first-image"
+    "second-image third-image"
+    "fourth-image fourth-image"
+    "fourth-image fourth-image";
+  grid-template-columns: auto;
+  gap: var(--size-sm);
+}
+
+.projeto-link:nth-of-type(1) {
+  grid-area: first-image;
+}
+
+.projeto-link:nth-of-type(2) {
+  grid-area: second-image;
+}
+
+.projeto-link:nth-of-type(3) {
+  grid-area: third-image;
+}
+
+.projeto-link:nth-of-type(4) {
+  grid-area: fourth-image;
+}
+
+.projeto-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.comentarios {
+  padding: var(--size-md) 0;
+}
+
+.conectar {
+  background-color: var(--primary);
+  padding: var(--size-md) 0 calc(var(--size-md) + var(--size-xs));
+  position: relative;
+  z-index: 1;
+}
+
+.conectar::before {
+  content: '';
+  background-image: url(../assets/WaterMark.svg);
+  background-size: 230%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  opacity: .1;
+  inset: 0;
+  z-index: -1;
+}
+
+.conectar .sub-titulo {
+  color: var(--white);
+  font-weight: var(--fw-normal);
+  margin-bottom: var(--size-sm);
+}
+
+.conectar .titulo {
+  color: var(--white);
+}
+
+.equipe {
+  padding: var(--size-md) 0;
+}
+
+.equipe > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size-md);
+}
+
+.apresentacao,
+.projetos,
+.comentarios,
+.equipe {
+  background-color: #FAFAFA;
+}
+
+@media only screen and (min-width: 1000px) {
+  .hero {
+    background-size: contain;
+    background-position: center right;
+  }
+
+  .hero .container {
+    padding: var(--hero-pd-top) var(--size-lg) var(--hero-pd-bot);
+  }
+
+  .hero-crumbs {
+    font-size: var(--size-sm);
+    gap: var(--size-smd);
+    margin-bottom: var(--size-sm);
+  }
+
+  .hero-crumbs .dot {
+    font-size: var(--size-md);
+  }
+
+  .hero .titulo {
+    font-size: var(--size-lg);
+    max-width: 20ch;
+  }
+
+  .hero-action {
+    font-size: var(--size-smd);
+    margin-top: var(--size-md);
+  }
+
+  .servicos-links > ul {
+    columns: 2;
+    gap: var(--size-lg);
+  }
+
+  .projetos {
+    padding: var(--size-xxl) 0 var(--size-md);
+  }
+
+  .projetos-links {
+    grid-template-areas: 
+      "first-image first-image first-image fourth-image fourth-image"
+      "second-image second-image third-image fourth-image fourth-image";
+    gap: var(--size-sm);
+  }
+
+  .projeto-link {
+    position: relative;
+  }
+
+  .projeto-link:hover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--primary);
+    opacity: 0.3;
+  }
+
+  .comentarios {
+    padding: var(--size-md) 0 var(--size-xxl);
+  }
+
+  .comentarios .carousel-item {
+    grid-template-areas: "image text text";
+    grid-template-columns: 1fr 2fr;
+    max-width: 85%;
+    margin: auto;
+  }
+
+  .conectar::before {
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .equipe > .container {
+    display: grid;
+    grid-template-areas: 
+      "carousel descricao" 
+      "botao botao";
+    grid-auto-columns: 1fr 2fr;
+  }
+
+  .equipe-action {
+    grid-area: botao;
+    display: flex;
+    justify-content: center;
+  }
+
+  .apresentacao,
+  .servicos,
+  .equipe,
+  .conectar {
+    padding: var(--size-xxl) 0;
+  }
+}

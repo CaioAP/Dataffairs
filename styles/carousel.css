@@ -1,0 +1,15 @@
+slide-carousel {
+  width: 100%;
+}
+
+.carousel-item {
+  display: none;
+  place-items: center;
+  gap: var(--size-md);
+}
+
+.carousel-texto {
+  font-size: var(--size-sm);
+  font-weight: var(--fw-normal);
+  line-height: 1.5;
+}
