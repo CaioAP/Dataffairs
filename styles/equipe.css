@@ -21,7 +21,7 @@
   background-color: var(--primary-3);
 }
 
-.equipe-profile::before:hover {
+.equipe-profile:hover::before {
   background-color: transparent;
 }
 
