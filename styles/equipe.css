@@ -7,7 +7,9 @@
 
 .equipe-profile {
   max-width: 100%;
-  display: grid;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
@@ -54,4 +56,10 @@
 
 .profile-social {
   margin-top: var(--size-sm);
+}
+
+@media only screen and (min-width: 1000px) {
+  .equipe-profiles {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
