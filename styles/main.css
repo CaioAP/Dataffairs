@@ -5,10 +5,12 @@
   --text-light: #807B76;
   --primary: #D82255;
   --primary-1: #D822551A;
+  --primary-3: #D822554D;
 
   --menu-bg: #000000e6;
   --dropdown-bg: #D822550D;
   --separator: #DBDBDB;
+  --section-bg: #FAFAFA;
 
   --size-xs: .5rem;
   --size-xsm: .75rem;
@@ -128,5 +130,11 @@ a {
 
   .descricao {
     font-size: var(--size-sm);
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 70vw;
   }
 }

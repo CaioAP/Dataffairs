@@ -11,9 +11,9 @@ footer {
   width: 100%;
 }
 
-.container {
+footer .container {
   width: calc(100vw - var(--size-md));
-  padding: var(--size-md) var(--size-sm);
+  padding: var(--size-md) 0;
   margin: 0 auto;
 }
 
@@ -82,5 +82,11 @@ footer {
   .footer-link.social,
   .footer-link.contato {
     margin-top: calc(var(--size-sm) - 2px);
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  footer .container {
+    max-width: 70vw;
   }
 }

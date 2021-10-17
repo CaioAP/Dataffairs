@@ -131,7 +131,7 @@
 .projetos,
 .comentarios,
 .equipe {
-  background-color: #FAFAFA;
+  background-color: var(--section-bg);
 }
 
 @media only screen and (min-width: 1000px) {
@@ -227,6 +227,6 @@
   .servicos,
   .equipe,
   .conectar {
-    padding: var(--size-xxl) 0;
+    padding-block: var(--size-xxl);
   }
 }

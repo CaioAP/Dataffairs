@@ -1,0 +1,57 @@
+.equipe-profiles {
+  display: grid;
+  place-items: center;
+  gap: var(--size-xmd);
+  margin-block: var(--size-lg);
+}
+
+.equipe-profile {
+  max-width: 100%;
+  display: grid;
+  position: relative;
+}
+
+.equipe-profile::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: var(--primary-3);
+}
+
+.equipe-profile::before:hover {
+  background-color: transparent;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-data {
+  background-color: var(--white);
+  padding: var(--size-sm) var(--size-smd);
+}
+
+.profile-name {
+  font-size: var(--size-smd);
+  color: var(--primary);
+}
+
+.profile-role {
+  font-size: var(--size-sm);
+  color: var(--text-light);
+}
+
+.profile-description {
+  margin-top: var(--size-sm);
+  font-weight: var(--fw-normal);
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.profile-social {
+  margin-top: var(--size-sm);
+}
