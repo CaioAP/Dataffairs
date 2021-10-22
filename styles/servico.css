@@ -1,0 +1,123 @@
+.hero-servicos::before {
+  background-image: url(../assets/ServicosBackground.png);
+  background-position: 500% 100%;
+  background-size: 90%;
+}
+
+.hero-servicos .titulo {
+  max-width: 80%;
+}
+
+.servicos .titulo {
+  margin-block: var(--size-sm);
+}
+
+.servicos-articles {
+  margin: var(--size-lg) 0;
+  display: grid;
+  gap: var(--size-lg);
+}
+
+.servico-article {
+  display: grid;
+}
+
+.servico-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.servico-article,
+.servico-data {
+  gap: var(--size-md);
+}
+
+.servico-title {
+  font-size: var(--size-smd);
+  color: var(--text);
+}
+
+.servico-description {
+  color: var(--text-light);
+}
+
+.servico-picture {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: var(--servico-bg);
+}
+
+.servico-picture > img {
+  width: 80%;
+  margin: var(--size-md) auto;
+}
+
+.servico-link {
+  display: flex;
+  align-items: center;
+  gap: var(--size-sm);
+  color: var(--text);
+}
+
+.servico-link:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.link-icone {
+  background-color: var(--text-light);
+  display: grid;
+  place-items: center;
+  height: min-content;
+  padding: var(--size-sm);
+}
+
+.servico-link:hover .link-icone {
+  background-color: var(--primary);
+}
+
+.link-icone > svg {
+  width: 21px;
+}
+
+@media only screen and (min-width: 560px) {
+  .hero-servicos::before {
+    background-position: 200% 100%;
+    background-size: 70%;
+  }
+
+  .hero-servicos .titulo {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .hero-servicos::before {
+    background-position: 120% 100%;
+    background-size: contain;
+  }
+
+  .servico-article {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .servico-article:nth-of-type(even) {
+    grid-auto-flow: dense;
+  }
+
+  .servico-article:nth-of-type(even) .servico-picture {
+    grid-column: 2;
+  }
+
+  .servico-article:nth-of-type(even) .servico-data {
+    grid-column: 1;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-servicos::before {
+    background-position: bottom right;
+    background-size: 40%;
+  }
+}

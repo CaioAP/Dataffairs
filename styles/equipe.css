@@ -1,3 +1,9 @@
+.hero-equipe::before {
+  background-image: url(../assets/EquipeBackground.svg);
+  background-position: bottom right;
+  background-size: 70%;
+}
+
 .equipe-profiles {
   display: grid;
   place-items: center;
@@ -69,6 +75,10 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .hero-equipe::before {
+    background-size: contain;
+  }
+
   .equipe-profiles {
     grid-template-columns: 1fr 1fr 1fr;
   }

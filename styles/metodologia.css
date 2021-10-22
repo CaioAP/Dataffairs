@@ -1,0 +1,12 @@
+.hero-metodologia::before {
+  background-image: url(../assets/MetodologiaBackground.jpg);
+  background-position: 250%;
+  background-size: 80%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .hero-metodologia::before {
+    background-position: 120%;
+    background-size: 50%;
+  }
+}

@@ -40,7 +40,7 @@ navbar.innerHTML = `
               </li>
             </ul>
           </li>
-          <li class="nav-link"><a href="">Serviços</a></li>
+          <li class="nav-link"><a href="/servicos.html">Serviços</a></li>
           <li class="nav-link"><a href="">Projetos</a></li>
           <li class="nav-link"><a href="">Contato</a></li>
           <li class="nav-link"><a href="">Blog</a></li>

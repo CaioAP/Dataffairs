@@ -13,18 +13,6 @@
   z-index: -1;
 }
 
-.hero-metodologia::before {
-  background-image: url(../assets/MetodologiaBackground.jpg);
-  background-position: 250%;
-  background-size: 80%;
-}
-
-.hero-equipe::before {
-  background-image: url(../assets/EquipeBackground.svg);
-  background-position: bottom right;
-  background-size: 70%;
-}
-
 .hero .titulo {
   margin-bottom: var(--size-sm);
 }
@@ -40,7 +28,8 @@
 }
 
 .metodologia,
-.equipe {
+.equipe,
+.servicos {
   padding-block: var(--size-md);
   background-color: var(--section-bg);
 }
@@ -48,14 +37,5 @@
 @media only screen and (min-width: 1000px) {
   .hero {
     padding-block: var(--size-xxxl);
-  }
-
-  .hero-metodologia::before {
-    background-position: 120%;
-    background-size: 50%;
-  }
-
-  .hero-equipe::before {
-    background-size: contain;
   }
 }
