@@ -1,7 +1,7 @@
 .hero-equipe::before {
-  background-image: url(../assets/EquipeBackground.svg);
-  background-position: bottom right;
-  background-size: 70%;
+  background-image: url(../assets/backgrounds/EquipeBackgrounds.png);
+  background-position: 100% 100%;
+  background-size: 60%;
 }
 
 .equipe-profiles {

@@ -1,5 +1,5 @@
 .hero-servicos::before {
-  background-image: url(../assets/ServicosBackground.png);
+  background-image: url(../assets/backgrounds/ServicosBackground.png);
   background-position: 500% 100%;
   background-size: 90%;
 }
