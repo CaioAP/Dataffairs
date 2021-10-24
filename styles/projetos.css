@@ -1,0 +1,52 @@
+.hero-projetos::before {
+  background-image: url(../assets/backgrounds/ProjetosBackground.jpg);
+  background-position: 200% 100%;
+  background-size: 90%;
+}
+
+.card-image {
+  filter: saturate(0);
+}
+
+.card-image:hover {
+  cursor: pointer;
+}
+
+.card:hover .card-image {
+  filter: unset;
+}
+
+.card:hover .card-body {
+  background-color: var(--primary);
+}
+
+.card-actions {
+  display: flex;
+  gap: var(--size-sm);
+}
+
+.projeto-link {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.projeto-link:hover {
+  cursor: pointer;
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .projeto-link {
+  color: var(--white);
+}
+
+@media only screen and (min-width: 1000px) {
+  .hero-projetos::before {
+    background-position: 100% 100%;
+    background-size: contain;
+  }
+
+  .projeto-link {
+    font-size: calc(var(--size-sm) - 2px);
+  }
+}

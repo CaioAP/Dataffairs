@@ -29,7 +29,8 @@
 
 .metodologia,
 .equipe,
-.servicos {
+.servicos,
+.projetos {
   padding-block: var(--size-md);
   background-color: var(--section-bg);
 }

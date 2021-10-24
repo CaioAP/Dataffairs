@@ -41,7 +41,7 @@ navbar.innerHTML = `
             </ul>
           </li>
           <li class="nav-link"><a href="/servicos.html">Serviços</a></li>
-          <li class="nav-link"><a href="">Projetos</a></li>
+          <li class="nav-link"><a href="/projetos.html">Projetos</a></li>
           <li class="nav-link"><a href="">Contato</a></li>
           <li class="nav-link"><a href="">Blog</a></li>
           <li class="nav-link"><a href="">Podcast</a></li>
