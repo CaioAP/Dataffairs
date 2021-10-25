@@ -121,7 +121,7 @@ class Navbar extends HTMLElement {
       ]
     }
 
-    if (/projetos/gi.test(pathname)) {
+    if (/projeto/gi.test(pathname)) {
       return [
         this.shadowRoot.querySelector('.nav-link:nth-of-type(3)'),
       ]

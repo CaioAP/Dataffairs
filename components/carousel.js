@@ -48,7 +48,8 @@ class Carousel extends HTMLElement {
     this.carouselIndex = 1
     this.name = ''
     this.queryName = ''
-    this.height = 100
+    this.height = 0
+    this.arrowSpacing = 0
   }
 
   navigateCarousel(movement) {
@@ -73,23 +74,36 @@ class Carousel extends HTMLElement {
   resizeImages() {
     const carouselImages = document.querySelectorAll(`${this.queryName} .carousel-image`)
 
-    for (const image of carouselImages) {
-      image.style['height'] = `${this.height}px`
-      image.style['max-height'] = `${this.height}px`
-    }
+    if (this.height)
+      for (const image of carouselImages) {
+        image.style['height'] = `${this.height}px`
+        image.style['max-height'] = `${this.height}px`
+      }
   }
 
   resizeArrows() {
     const prev = this.shadowCarousel.querySelector('.prev')
     const next = this.shadowCarousel.querySelector('.next')
 
-    prev.style.top = this.height / 2
-    next.style.top = this.height / 2
+    if (this.height) {
+      prev.style.top = `${this.height / 2}px`
+      next.style.top = `${this.height / 2}px`
+    } else {
+      prev.style.top = '50%'
+      next.style.top = '50%'
+    }
+
+    if (this.arrowSpacing) {
+      prev.style.left = `${this.arrowSpacing}px`
+      next.style.right = `${this.arrowSpacing}px`
+    }
+
   }
 
   connectedCallback() {
     this.name = this.getAttribute('name') || this.name
     this.height = this.getAttribute('height') || this.height
+    this.arrowSpacing = this.getAttribute('arrow-spacing') || this.arrowSpacing
     this.queryName = this.name ? `[name="${this.name}"]` : ''
 
     if (!this.shadowRoot) {
