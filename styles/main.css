@@ -6,13 +6,16 @@
   --primary: #D82255;
   --primary-1: #D822551A;
   --primary-3: #D822554D;
-
+  
   --menu-bg: #000000e6;
+  --dialog-bg: #0000004d;
   --dropdown-bg: #D822550D;
-  --separator: #DBDBDB;
   --section-bg: #FAFAFA;
   --equipe-bg: #F1F1F1;
   --servico-bg: #F3F3F3;
+  --input-border: #EBEAED;
+  --separator: #DBDBDB;
+  --placeholder: #9E9B98;
 
   --size-xs: .5rem;
   --size-xsm: .75rem;
@@ -102,7 +105,7 @@ a {
 }
 
 .btn-white:hover {
-  background-color: var(--white);
+  background: var(--white);
   color: var(--primary);
 }
 
@@ -116,8 +119,22 @@ a {
   color: var(--primary);
 }
 
+.btn-default {
+  background: transparent;
+  border: none;
+}
+
+.btn-default:hover {
+  background: transparent;
+  border: none;
+}
+
 .icone {
   width: var(--size-sm);
+}
+
+:-moz-focusring {
+  outline: unset;
 }
 
 @media only screen and (min-width: 1000px) {

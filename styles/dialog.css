@@ -1,0 +1,37 @@
+.dialog {
+  position: fixed;
+  inset: 0;
+  background-color: var(--dialog-bg);
+  display: grid;
+  place-items: center;
+  z-index: 999;
+}
+
+dialog {
+  position: absolute;
+  border: none;
+  max-width: 50%;
+  display: grid;
+  place-items: center;
+  padding: var(--size-xmd) var(--size-xl) var(--size-xl) var(--size-xl);
+}
+
+.icone.mensagem {
+  width: 50%;
+}
+
+dialog .titulo {
+  color: var(--text);
+  font-size: var(--size-smd);
+}
+
+dialog .texto {
+  color: var(--text-light);
+  text-align: center;
+}
+
+dialog .btn-close {
+  position: absolute;
+  top: var(--size-sm);
+  right: var(--size-sm);
+}

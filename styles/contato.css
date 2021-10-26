@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-lg);
+}
+
+.titulo {
+  font-size: var(--size-md);
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-areas: 
+    "titulo titulo titulo"
+    "telefone whatsapp email";
+  grid-template-columns: auto;
+}
+
+.checkboxes h4 {
+  grid-area: titulo;
+  color: var(--text);
+  font-size: calc(var(--size-sm) + 4px);
+  margin-bottom: var(--size-sm);
+}
+
+.btn.btn-fill {
+  margin-top: var(--size-md);
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-md);
+  text-align: center;
+}
+
+aside > div > h4 {
+  font-size: calc(var(--size-sm) + 4px);
+  color: var(--text);
+  margin-bottom: var(--size-sm);
+}
+
+aside > div > a {
+  color: var(--primary);
+}
+
+.nossos-contatos {
+  display: flex;
+  flex-direction: column;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--size-sm);
+}
+
+.redes-sociais > h4 {
+  width: 100%;
+}
+
+.link-social {
+  background: var(--primary-1);
+  padding: calc(var(--size-xs) - 2px);
+  border-radius: 100px;
+  width: min-content;
+  display: flex;
+}
+
+/* #mensagem-enviada {
+  display: none;
+} */
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+    padding-block: var(--size-xl);
+  }
+
+  .conectar {
+    width: 80%;
+  }
+
+  .formulario {
+    grid-template-areas: 
+      "nome nome nome email email email"
+      "fone fone servico servico servico servico"
+      "mensagem mensagem mensagem mensagem mensagem mensagem"
+      "contato contato contato captcha captcha captcha"
+      "empty empty empty empty submit submit";
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  #nome {
+    grid-area: nome;
+  }
+
+  #email {
+    grid-area: email;
+  }
+
+  #telefone {
+    grid-area: fone;
+  }
+
+  #servico {
+    grid-area: servico;
+  }
+
+  #mensagem {
+    grid-area: mensagem;
+  }
+
+  .checkboxes {
+    grid-area: contato;
+  }
+
+  .captcha {
+    grid-area: captcha;
+  }
+
+  .btn.btn-fill {
+    grid-area: submit;
+  }
+
+  aside {
+    text-align: start;
+    border-left: 1px solid #DBDBDB;
+    padding-left: var(--size-lg);
+  }
+
+  .redes-sociais {
+    justify-content: flex-start;
+  }
+
+  .redes-sociais > h4 {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,99 @@
+form {
+  display: grid;
+  gap: var(--size-sm);
+}
+
+label {
+  color: var(--placeholder);
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+}
+
+textarea + label {
+  bottom: unset;
+  top: 8px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: 40px;
+  background-color: var(--white);
+  border: 1px solid var(--input-border);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: var(--size-sm);
+  padding: 4px var(--size-xsm);
+}
+
+input[type="checkbox"] {
+  width: -moz-fit-content;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid var(--primary);
+}
+
+input:focus + label,
+select:focus + label,
+textarea:focus + label {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+input:valid + label,
+select:valid + label,
+textarea:valid + label {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+select[data-chosen=""] + label {
+  position: absolute;
+  top: unset;
+  bottom: 8px;
+  left: 12px;
+}
+
+input[required] + label:after,
+select[required] + label:after,
+textarea[required] + label:after {
+  content: '*';
+  color: var(--primary);
+}
+
+input[type="checkbox"] {
+  min-height: 16px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-select,
+.form-input {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.form-select::before {
+  content: url(/assets/icons/AngleDown.svg);
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  right: 12px;
+  bottom: 16px;
+}

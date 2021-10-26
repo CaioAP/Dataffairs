@@ -31,7 +31,8 @@
 .equipe,
 .servicos,
 .projetos,
-.projeto {
+.projeto,
+.contato {
   padding-block: var(--size-md);
   background-color: var(--section-bg);
 }
