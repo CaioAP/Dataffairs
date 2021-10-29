@@ -23,6 +23,7 @@ dialog {
 dialog .titulo {
   color: var(--text);
   font-size: var(--size-smd);
+  text-align: center;
 }
 
 dialog .texto {

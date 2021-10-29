@@ -54,11 +54,17 @@ textarea:valid + label {
   left: 0px;
 }
 
-select[data-chosen=""] + label {
+select:valid + label {
   position: absolute;
   top: unset;
   bottom: 8px;
   left: 12px;
+}
+
+select:valid.selected + label {
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
 
 input[required] + label:after,
