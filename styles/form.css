@@ -29,6 +29,7 @@ textarea {
 }
 
 input[type="checkbox"] {
+  width: fit-content;
   width: -moz-fit-content;
 }
 

@@ -5,6 +5,7 @@
 }
 
 .card-image {
+  background-color: #F3F3F3;
   filter: saturate(0);
 }
 
@@ -14,6 +15,10 @@
 
 .card:hover .card-image {
   filter: unset;
+}
+
+.card-image img {
+  height: 300px;
 }
 
 .card:hover .card-body {
@@ -44,6 +49,10 @@
   .hero-projetos::before {
     background-position: 100% 100%;
     background-size: contain;
+  }
+
+  .card-image img {
+    height: 220px;
   }
 
   .projeto-link {

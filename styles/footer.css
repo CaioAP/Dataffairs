@@ -13,7 +13,7 @@ footer {
 
 footer .container {
   width: calc(100vw - var(--size-md));
-  padding: var(--size-md) 0;
+  padding: var(--size-md) var(--size-sm);
   margin: 0 auto;
 }
 
@@ -65,6 +65,12 @@ footer .container {
   width: var(--size-sm);
 }
 
+@media only screen and (min-width: 524px) {
+  footer .container {
+    max-width: 90vw;
+  }
+}
+
 @media only screen and (min-width: 1000px) {
   footer .container {
     display: grid;
@@ -87,6 +93,6 @@ footer .container {
 
 @media only screen and (min-width: 1400px) {
   footer .container {
-    max-width: 70vw;
+    max-width: 1440px;
   }
 }

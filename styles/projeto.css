@@ -40,12 +40,8 @@ ul.descricao li {
     grid-template-areas:
       "carousel detalhes"
       "schema schema";
-    grid-template-columns: auto;
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--size-xl);
-  }
-
-  .titulo {
-    margin-top: 0;
   }
 
   .schema {
@@ -55,8 +51,16 @@ ul.descricao li {
     flex-direction: column;
   }
 
+  .schema .titulo {
+    margin-top: 0;
+  }
+
   .schema .fluxo {
     max-width: 60%;
     margin: 0 auto;
+  }
+
+  .f-width {
+    grid-column: span 2;
   }
 }
