@@ -7,26 +7,26 @@ footer.innerHTML = `
     <div class="container">
       <header class="footer-header">
         <img src="/assets/Logo.svg" alt="Logotipo Dataffairs" class="footer-logo">
-        <p class="footer-descricao">
+        <!-- <p class="footer-descricao">
           Lorem ipsum dolor amet, consectetur adipiscing elit. 
           Eget nisl nunc quam ac sed turpis volutpat. 
           Cursus sed massa non nisi, placerat.
-        </p>
+        </p> -->
       </header>
       <nav class="footer-links acesso-rapido">
         <h3 class="footer-titulo">Acesso Rápido</h3>
         <ul>
           <li class="footer-link">
-            <a href="">A Dataffairs</a>
+            <a href="/">A Dataffairs</a>
           </li>
           <li class="footer-link">
-            <a href="">Equipe</a>
+            <a href="equipe.html">Equipe</a>
           </li>
           <li class="footer-link">
-            <a href="">Métodos e Processos</a>
+            <a href="metodologia.html">Métodos e Processos</a>
           </li>
           <li class="footer-link">
-            <a href="">Projetos</a>
+            <a href="projetos.html">Projetos</a>
           </li>
         </ul>
       </nav>
@@ -34,19 +34,19 @@ footer.innerHTML = `
         <h3 class="footer-titulo">Serviços</h3>
         <ul>
           <li class="footer-link">
-            <a href="">Data ESG</a>
+            <a href="servicos.html?servico=data-esg">Data ESG</a>
           </li>
           <li class="footer-link">
-            <a href="">Relações Públicas & Public Affairs</a>
+            <a href="servicos.html?servico=public-affairs">Relações Públicas & Public Affairs</a>
           </li>
           <li class="footer-link">
-            <a href="">Worshops ESG</a>
+            <a href="servicos.html?servico=workshops">Worshops ESG</a>
           </li>
           <li class="footer-link">
-            <a href="">Estratégias baseadas em ciência</a>
+            <a href="servicos.html?servico=strategies">Estratégias baseadas em ciência</a>
           </li>
           <li class="footer-link">
-            <a href="">Comunicação de ciência</a>
+            <a href="servicos.html?servico=science-communication">Comunicação de ciência</a>
           </li>
         </ul>
       </nav>
@@ -97,6 +97,17 @@ footer.innerHTML = `
           </li>
         </ul>
       </nav>
+      <div class="copyright">
+        <span>
+          © Dataffairs 2021
+        </span>
+        <span>
+          A Dattafairs é uma marca registrada e de propriedade da Camara 
+          Quierati Tecnologia e Comunicação LTDA - CNPJ 29.180.317/0001-39 
+          com sede na Av. Gióia Martins, 199 – 5º andar Bloco C – São Paulo/SP 
+          – CEP 05632-020.
+        </span>
+      </div>
     </div>
   </footer>
 `
