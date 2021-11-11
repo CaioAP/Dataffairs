@@ -9,6 +9,9 @@
 
 .hero .container {
   padding: var(--size-xxxl) var(--size-sm) var(--size-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-sm);
 }
 
 .hero-crumbs {
@@ -29,9 +32,21 @@
   align-items: center;
 }
 
+.hero .titulo {
+  font-weight: var(--fw-bolder);
+}
+
+.hero .btn {
+  width: fit-content;
+  width: -moz-fit-content;
+  font-weight: var(--fw-bolder);
+}
+
 .apresentacao .titulo {
   border-left: 5px solid var(--primary);
   padding: 0 0 0 var(--size-sm);
+  margin-bottom: var(--size-lg);
+  font-weight: var(--fw-bolder);
 }
 
 .servicos-links {
@@ -43,11 +58,18 @@
   border-bottom: .7px solid var(--separator);
 }
 
+.servico-link:last-of-type {
+  border-bottom: 1px solid transparent;
+}
+
 .servico-link > a {
   color: var(--text);
-  font-weight: var(--fw-bold);
   display: flex;
   justify-content: space-between;
+}
+
+.servico-link h3 {
+  font-weight: var(--fw-bold);
 }
 
 .projetos-links {
@@ -134,7 +156,7 @@
   background-color: var(--section-bg);
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1080px) {
   .hero {
     background-size: contain;
     background-position: center right;
@@ -160,13 +182,24 @@
   }
 
   .hero-action {
-    font-size: var(--size-smd);
-    margin-top: var(--size-md);
+    font-size: var(--size-sm);
   }
 
   .servicos-links > ul {
-    columns: 2;
-    gap: var(--size-lg);
+    -moz-column-count: 2;
+    -moz-column-gap: var(--size-lg);;
+    -webkit-column-count: 2;
+    -webkit-column-gap: var(--size-lg);;
+    column-count: 2;
+    column-gap: var(--size-lg);
+  }
+
+  .servico-link {
+    break-inside: avoid-column;
+  }
+
+  .servico-link:nth-of-type(3) {
+    border-bottom: 1px solid transparent;
   }
 
   .projetos {
@@ -204,10 +237,30 @@
     margin: auto;
   }
 
+  .conectar .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-sm);
+  }
+
   .conectar::before {
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: left;
+  }
+
+  .conectar .titulo {
+    font-weight: var(--fw-bold);
+  }
+
+  .conectar .sub-titulo {
+    font-size: var(--size-smd)
+  }
+
+  .conectar .btn {
+    width: fit-content;
+    width: -moz-fit-content;
+    padding-block: calc(var(--size-sm) - 4px);
   }
 
   .equipe > .container {
